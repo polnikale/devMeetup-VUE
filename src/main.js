@@ -9,6 +9,7 @@ import router from './router';
 import { store } from './store';
 import DateFilter from './filters/date';
 import AlertCmp from './components/Shared/Alert';
+import EditMeetupsDetailsDialog from './components/Meetup/Edit/EditMeetupDetailsDialog';
 
 Vue.use(Vuetify, {
   theme: {
@@ -23,6 +24,7 @@ Vue.use(Vuetify, {
 });
 Vue.filter('date', DateFilter);
 Vue.component('app-alert', AlertCmp);
+Vue.component('app-edit-meetup-details-dialog', EditMeetupsDetailsDialog);
 
 Vue.config.productionTip = false;
 

@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row>
       <v-flex xs12 sm6 offset-sm3>
-        <h4 class="secondary--text">Creare a new Meetup</h4>
+        <h4 class="secondary--text">Create a new Meetup</h4>
       </v-flex>
     </v-layout>
     <v-layout row>
@@ -146,16 +146,17 @@ export default {
     },
     onFilePicked(event) {
       const files = event.target.files;
-      let filename = files[0].name;
+      const filename = files[0].name;
       if (filename.lastIndexOf('.') <= 0) {
         return alert('Add a valid file!');
       }
       const fileReader = new FileReader();
-      fileReader.addEventListener('load', () =>  {
+      fileReader.addEventListener('load', () => {
         this.imageUrl = fileReader.result;
       });
       fileReader.readAsDataURL(files[0]);
       this.image = files[0];
+      return false;
     },
   },
 };
