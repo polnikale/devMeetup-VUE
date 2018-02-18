@@ -12,6 +12,7 @@ import AlertCmp from './components/Shared/Alert';
 import EditMeetupsDetailsDialog from './components/Meetup/Edit/EditMeetupDetailsDialog';
 import EditMeetupsDateDialog from './components/Meetup/Edit/EditMeetupDateDialog';
 import EditMeetupsTimeDialog from './components/Meetup/Edit/EditMeetupTimeDialog';
+import RegisterDialog from './components/Meetup/Registration/RegisterDialog';
 
 Vue.use(Vuetify, {
   theme: {
@@ -29,6 +30,7 @@ Vue.component('app-alert', AlertCmp);
 Vue.component('app-edit-meetup-details-dialog', EditMeetupsDetailsDialog);
 Vue.component('app-edit-meetup-date-dialog', EditMeetupsDateDialog);
 Vue.component('app-edit-meetup-time-dialog', EditMeetupsTimeDialog);
+Vue.component('app-meetup-register-dialog', RegisterDialog);
 
 Vue.config.productionTip = false;
 
